@@ -1,5 +1,7 @@
 # logon_organizer beta
-Pulls login info from RDP, Terminal, Security, and System (reboot) event logs
+Pulls login info from RDP, Terminal, Security, and System (reboot) event logs  
+  
+Currently uses TZworks's evtwalk to parse evtx logs  
   
 Many fields in the different event logs have different field names for the same/similar data.  Many fields have nothing in common.  Normal export utilities output each eventID with different headers thereby making mapping time consuming.  I've taken this approach.
   
