@@ -1,5 +1,5 @@
 # logon_organizer beta
-Pulls login info from RDP, Terminal, Security, and System (reboot) event logs  
+Pulls login info from RemoteDesktop, TerminalServices, Security, and System (reboot) event logs  
   
 Currently uses TZworks's evtwalk to parse evtx logs  
   
