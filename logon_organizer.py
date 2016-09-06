@@ -175,7 +175,7 @@ con = lite.connect('temporary.db')
 with con:
     cur = con.cursor()    
 
-    print ("eventid,eventdesc,date,timeutc,computer,activityid,guid,processid,targetdomainname,logontype,targetusername,clientip,clientusername,subjectlogonid")
+    print ("eventid,eventdesc,date,timeutc,computer,guid,activityid,processid,targetdomainname,logontype,targetusername,clientip,clientusername,subjectlogonid")
     if checkTableExists(cur, "ID4624"):
         cur.execute("SELECT eventid,eventdesc,date,timeutc,computer,guid,none,processid1,targetdomainname,\
                      logontype,targetusername,none,none,subjectlogonid FROM ID4624")
