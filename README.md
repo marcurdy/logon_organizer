@@ -1,7 +1,8 @@
-# logon_organizer beta
+# logon_organizer beta  
 Pulls login info from RemoteDesktop, TerminalServices, Security, and System (reboot) event logs  
   
-Currently uses TZworks's evtwalk to parse evtx logs  
+Currently uses TZworks's evtwalk to parse evtx logs.  
+To Do: move to python-evtx (NTUSER, RemoteConn/LocalSess) and python-registry (SYSTEM)  
   
 Many fields in the different event logs have different field names for the same/similar data.  Many fields have nothing in common.  Normal export utilities output each eventID with different headers thereby making mapping time consuming.  I've taken this approach.
   
